@@ -29,7 +29,7 @@ public class FurnaceGenerator extends BlockContainer {
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
     private static boolean hasTileEntity;
 
-    public Smelter(Material mat) {
+    public FurnaceGenerator(Material mat) {
         super(mat);
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         setCreativeTab(MCreativeTabs.tabBlock);

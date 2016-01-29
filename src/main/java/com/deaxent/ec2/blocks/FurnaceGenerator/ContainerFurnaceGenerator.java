@@ -100,19 +100,9 @@ public class ContainerFurnaceGenerator extends Container {
             ItemStack itemStack2 = slot.getStack();
             itemStack1 = itemStack2.copy();
 
-            if (slotIndex == TileFurnaceGenerator.slotEnum.OUTPUT_SLOT.ordinal()) {
-                if (!mergeItemStack(itemStack2, sizeInventory, sizeInventory+36, true)) {
-                    return null;
-                }
-
-                slot.onSlotChange(itemStack2, itemStack1);
-            } else if (slotIndex != TileFurnaceGenerator.slotEnum.INPUT_SLOT.ordinal()) {
+            if (slotIndex != TileFurnaceGenerator.slotEnum.INPUT_SLOT.ordinal()) {
                 // check if there is a grinding recipe for the stack
-                if (SmelterRecipes.instance().getSmeltingResult(itemStack2) != null) {
-                    if (!mergeItemStack(itemStack2, 0, 1, false)) {
-                        return null;
-                    }
-                } else if (slotIndex >= sizeInventory && slotIndex < sizeInventory+27) {
+                if (slotIndex >= sizeInventory && slotIndex < sizeInventory+27) {
                     if (!mergeItemStack(itemStack2, sizeInventory+27, sizeInventory+36, false)) {
                         return null;
                     }

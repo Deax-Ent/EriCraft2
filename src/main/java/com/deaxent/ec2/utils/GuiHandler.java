@@ -2,6 +2,8 @@ package com.deaxent.ec2.utils;
 
 //import com.deaxent.ec2.blocks.Charger.ContainerCharger;
 //import com.deaxent.ec2.blocks.Charger.GuiCharger;
+import com.deaxent.ec2.blocks.FurnaceGenerator.ContainerFurnaceGenerator;
+import com.deaxent.ec2.blocks.FurnaceGenerator.GuiFurnaceGenerator;
 import com.deaxent.ec2.blocks.Grinder.ContainerGrinder;
 import com.deaxent.ec2.blocks.Grinder.GuiGrinder;
 import com.deaxent.ec2.blocks.MBlock;
@@ -33,6 +35,9 @@ public class GuiHandler implements IGuiHandler {
             if(ID == MBlock.GUI_ENUM.SMELTER.ordinal()) {
                 return new ContainerSmelter(player.inventory, (IInventory) tileEntity);
             }
+            if(ID == MBlock.GUI_ENUM.FURNACEGENERATOR.ordinal()) {
+                return new ContainerFurnaceGenerator(player.inventory, (IInventory) tileEntity);
+            }
             // if blablabla
         }
 
@@ -52,6 +57,9 @@ public class GuiHandler implements IGuiHandler {
             }
             if(ID == MBlock.GUI_ENUM.SMELTER.ordinal()) {
                 return new GuiSmelter(player.inventory, (IInventory) tileEntity);
+            }
+            if(ID == MBlock.GUI_ENUM.FURNACEGENERATOR.ordinal()) {
+                return new GuiFurnaceGenerator(player.inventory, (IInventory) tileEntity);
             }
             // if blablabla
         }

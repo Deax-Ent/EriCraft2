@@ -1,6 +1,7 @@
 package com.deaxent.ec2.blocks;
 
 //import com.deaxent.ec2.blocks.Charger.BlockCharger;
+import com.deaxent.ec2.blocks.FurnaceGenerator.FurnaceGenerator;
 import com.deaxent.ec2.blocks.Grinder.Grinder;
 import com.deaxent.ec2.blocks.Smelter.Smelter;
 import com.deaxent.ec2.utils.Reference;
@@ -14,7 +15,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MBlock {
 
     public enum GUI_ENUM {
-        CHARGER, GRINDER, SMELTER
+        CHARGER, GRINDER, SMELTER, FURNACEGENERATOR
     }
 
     //public static Block blockCharger;
@@ -29,6 +30,7 @@ public class MBlock {
     // Machines
     public static Block grinder;
     public static Block smelter;
+    public static Block furnaceGenerator;
 
     // Parts
     public static Block machine_frame;
@@ -52,6 +54,7 @@ public class MBlock {
         // Machines
         grinder = new Grinder(Material.rock).setUnlocalizedName("grinder");
         smelter = new Smelter(Material.rock).setUnlocalizedName("smelter");
+        furnaceGenerator = new FurnaceGenerator(Material.rock).setUnlocalizedName("furnace_generator");
 
         // Parts
         machine_frame = new MachineFrame(1).setUnlocalizedName("machine_frame");
@@ -70,6 +73,7 @@ public class MBlock {
         // Machines
         GameRegistry.registerBlock(grinder, grinder.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(smelter, smelter.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(furnaceGenerator, furnaceGenerator.getUnlocalizedName().substring(5));
 
         // Parts
         GameRegistry.registerBlock(machine_frame, machine_frame.getUnlocalizedName().substring(5));
@@ -86,6 +90,7 @@ public class MBlock {
 
         registerRender(grinder);
         registerRender(smelter);
+        registerRender(furnaceGenerator);
 
         registerRender(machine_frame);
     }

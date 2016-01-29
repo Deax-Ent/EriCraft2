@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "ec2:blocks/FurnaceGenerator_top",
+    "front": "ec2:blocks/FurnaceGenerator_front",
+    "side": "ec2:blocks/FurnaceGenerator_side"
+  }
+}

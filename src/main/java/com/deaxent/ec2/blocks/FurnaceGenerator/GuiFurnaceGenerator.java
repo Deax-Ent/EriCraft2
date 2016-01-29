@@ -19,7 +19,7 @@ public class GuiFurnaceGenerator extends GuiContainer {
     private final InventoryPlayer invPlayer;
     private final IInventory tileFurnaceGenerator;
 
-    public GuiSmelter(InventoryPlayer inventoryPlayer, IInventory tileFurnaceGeneratorInv) {
+    public GuiFurnaceGenerator(InventoryPlayer inventoryPlayer, IInventory tileFurnaceGeneratorInv) {
         super(new ContainerFurnaceGenerator(inventoryPlayer, tileFurnaceGeneratorInv));
         invPlayer = inventoryPlayer;
         tileFurnaceGenerator = tileFurnaceGeneratorInv;
