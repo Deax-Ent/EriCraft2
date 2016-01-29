@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ec2:charger" },
+    "facing=south": { "model": "ec2:charger", "y": 180 },
+    "facing=west": { "model": "ec2:charger", "y": 270 },
+    "facing=east": { "model": "ec2:charger", "y": 90 }
+  }
+}

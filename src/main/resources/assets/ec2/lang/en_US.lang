@@ -1,0 +1,38 @@
+## Creative Tabs
+itemGroup.BlockTab=EriCraft2 Blocks
+itemGroup.ItemTab=EriCraft2 Items
+itemGroup.ToolTab=EriCraft2 Tools
+itemGroup.ArmorTab=EriCraft2 Armor
+
+## Items - Things
+item.energy_core.name=Energy Core
+
+## Items - Ingots
+item.ingot_tin.name=Tin Ingot
+item.ingot_copper.name=Copper Ingot
+item.ingot_silver.name=Silver Ingot
+item.ingot_phenium.name=Phenium Ingot
+
+## Items - Dusts
+item.dust_tin.name=Tin Dust
+item.dust_copper.name=Copper Dust
+item.dust_silver.name=Silver Dust
+item.dust_phenium.name=Phenium Dust
+
+## Tiles - Ores
+tile.block_core.name=Energy Block
+tile.ore_copper.name=Copper Ore
+tile.ore_tin.name=Tin Ore
+tile.ore_silver.name=Silver Ore
+tile.ore_phenium.name=Phenium Ore
+
+## Tiles - Machines
+tile.smelter.name=Smeltery
+tile.grinder.name=Grinder
+
+## Tiles - Parts
+tile.machine_frame.name=Machine Frame (Tier 1)
+
+## Containers
+container.grinder=Grider
+container.smelter=Smeltery

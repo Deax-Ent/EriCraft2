@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ec2:machine_frame" },
+    "facing=south": { "model": "ec2:machine_frame", "y": 180 },
+    "facing=west": { "model": "ec2:machine_frame", "y": 270 },
+    "facing=east": { "model": "ec2:machine_frame", "y": 90 }
+  }
+}
